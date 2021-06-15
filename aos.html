@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="vendor/aos/css/aos.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>AOS</title>
+  </head>
+
+  <body>
+    
+
+    <section class="aos_sec common">
+      <div class="container">
+        <div class="row text-center f-row">
+          <h1>This is AOS Plugin</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="flip-left">
+            <h2>This is a Heading</h2>
+            <img src="images/1.jpg" alt="">
+          </div>
+          <div class="col-lg-6" data-aos="flip-right">
+            <h2>This is a Heading</h2>
+            <img src="images/2.jpg" alt="">
+          </div>
+          <div class="col-lg-6 mt-5" data-aos="zoom-in-right">
+            <h2>This is a Heading</h2>
+            <img src="images/3.jpg" alt="">
+          </div>
+          <div class="col-lg-6 mt-5" data-aos="zoom-in-left">
+            <h2>This is a Heading</h2>
+            <img src="images/4.jpg" alt="">
+          </div>
+        
+      </div>
+    </section>
+
+
+    <!-- JS links -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="vendor/aos/js/aos.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      // AOS
+      AOS.init({
+        offset:200,
+        duration: 1000,
+      });
+    </script>
+
+  </body>
+
+</html>

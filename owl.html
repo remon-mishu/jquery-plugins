@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Owl css -->
+		<link rel="stylesheet" href="vendor/owl/css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="vendor/owl/css/owl.theme.default.min.css" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/media.css" />
+
+		<title>Owl Carousel</title>
+	</head>
+
+	<body>
+		<section class="counterUp common">
+			<div class="container">
+				<div class="row text-center f-row">
+					<h1>This is Owl Carousel</h1>
+				</div>
+				<div class="row">
+					<div class="owl-carousel owl-theme">
+            <div class="item"><img src="images/1.jpg" alt=""></div>
+            <div class="item"><img src="images/2.jpg" alt=""></div>
+            <div class="item"><img src="images/3.jpg" alt=""></div>
+            <div class="item"><img src="images/4.jpg" alt=""></div>
+            <div class="item"><img src="images/1.jpg" alt=""></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- JS links -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<!-- <script src="js/jquery.min.js"></script> -->
+		<script src="vendor/owl/js/owl.carousel.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			// Owl Carousel
+			$(".owl-carousel").owlCarousel({
+				loop: true,
+				margin: 10,
+				nav: false,
+				autoplay: true,
+				autoplayTimeout: 2000,
+				autoplayHoverPause: true,
+				center: true,
+				items: 2,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					600: {
+						items: 3,
+					},
+					1000: {
+						items: 4,
+					},
+				},
+			});
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,106 @@
+/* font integration */
+@font-face {
+	src: url(../fonts/lato/Lato-Bold.ttf);
+	font-family: Lato-Bold;
+}
+@font-face {
+	src: url(../fonts/roboto/Roboto-Regular.ttf);
+	font-family: Roboto-Regular;
+}
+/* Common part starts */
+body {
+	background-color: #293b5f;
+	font-family: Roboto-Regular;
+}
+
+/* Index CSS start */
+.index {
+}
+.index .f-row {
+	margin-top: 30px;
+}
+.index .f-row h1 {
+	font-family: Lato-Bold;
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;
+}
+.index .s-row {
+	margin-top: 30px;
+}
+.index .s-row li {
+	margin-top: 20px;
+	list-style: none;
+}
+.index .s-row li a {
+	text-decoration: none;
+	color: yellow;
+	font-size: 25px;
+}
+/* Index CSS end */
+
+/* Counter Up start */
+.common {
+  margin: 30px 0 0;
+}
+.common .f-row h1{
+  margin-bottom: 60px;
+  font-family: Lato-Bold;
+	font-size: 40px;
+	font-weight: 700;
+  color: yellow;
+}
+.counterUp {
+}
+.counterUp h3{
+  color: #fff;
+	font-size: 25px;
+}
+.counterUp .d-span {
+  margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 100%;
+}
+.counterUp .d-span span{
+  font-size: 30px;
+}
+/* Counter Up end */
+
+/* wow start */
+.wow_sec h2{
+  font-size: 30px;
+	font-weight: 700;
+  color: #fff;
+}
+.wow_sec p{
+  font-size: 20px;
+	font-weight: 400;
+  color: #fff;
+}
+/* wow end */
+
+/* AOS start */
+.aos_sec h2{
+  font-size: 30px;
+	font-weight: 700;
+  color: #fff;
+}
+.aos_sec img{
+  width: 100%;
+}
+/* AOS end */
+
+/* Slick start */
+.slick-initialized .slick-slide {
+	margin: 0 10px;
+}
+.slick-car img{
+	width: 100%;
+}
+/* Slick end */
+
+

@@ -1,0 +1,336 @@
+/* Sticky Menu start */
+/* font integration */
+@font-face {
+	src: url(../fonts/playfair-display/PlayfairDisplay-Regular.otf);
+	font-family: PlayfairDisplay-Regular;
+}
+@font-face {
+	src: url(../fonts/ubuntu/Ubuntu-L.ttf);
+	font-family: Ubuntu-L;
+}
+/* Common part starts */
+* {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	margin: 0 auto;
+	width: 85%;
+}
+.content {
+	margin: 0 auto;
+	width: 71%;
+}
+/* Common part ends */
+/* Header section starts */
+.header-area {
+	padding: 45px 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+  transition: 0.5s;
+}
+header.header-area.sticky {
+  background: #ddd;
+  padding: 29px 0 6px;
+}
+header .container {
+	overflow: hidden;
+}
+header .logo {
+	width: 12%;
+	float: left;
+}
+header .logo a {
+	display: inline-block;
+	width: 100%;
+}
+header .logo img {
+	width: 100%;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	margin: 0 40px;
+	display: inline-block;
+	list-style: none;
+}
+header ul li:last-child {
+	margin-right: 0;
+}
+header ul li a {
+	padding: 5px 10px;
+	display: inline-block;
+	font-family: PlayfairDisplay-Regular;
+	font-weight: 400;
+	color: #333333;
+	text-transform: uppercase;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: 0.8s;
+}
+header ul li a:hover, header ul li.current a {
+	background: #333333;
+	color: #fff;
+	border-radius: 10px;
+}
+/* Header section ends */
+
+/* Banner section starts */
+.banner {
+  margin-top: 160px;
+	width: 100%;
+}
+.banner .banner_img img {
+	width: 100%;
+}
+/* Banner section ends */
+
+/* Photodiary section starts */
+.photodiary {
+	padding: 83px 0 15px;
+	width: 100%;
+}
+.photodiary h6 {
+	font-family: Ubuntu-L;
+	font-size: 15px;
+	font-weight: 300;
+	color: #b8b2a4;
+	text-transform: uppercase;
+}
+.photodiary h6:first-child {
+	margin-bottom: 20px;
+}
+.photodiary h1 {
+	font-family: PlayfairDisplay-Regular;
+	font-size: 32px;
+	font-weight: 400;
+	color: #626262;
+}
+.photodiary p {
+	margin: 25px 0 30px;
+	font-family: PlayfairDisplay-Regular;
+	font-size: 15px;
+	font-weight: 400;
+	color: #626262;
+	line-height: 25px;
+}
+.photodiary textarea {
+	width: 100%;
+	font-family: Ubuntu-L;
+	font-size: 15px;
+	font-weight: 300;
+	color: #b8b2a4;
+	text-transform: uppercase;
+	border: none;
+	resize: none;
+}
+.photodiary textarea::placeholder {
+	font-family: Ubuntu-L;
+	font-size: 15px;
+	font-weight: 300;
+	color: #b8b2a4;
+	text-transform: uppercase;
+}
+.photodiary textarea:focus {
+	outline: none;
+}
+/* Photodiary section ends */
+
+/* Blog before newsletter section starts */
+.blog h6 {
+	margin: 20px 0 25px;
+	font-family: Ubuntu-L;
+	font-size: 14px;
+	font-weight: 300;
+	color: #b8b2a4;
+	text-transform: uppercase;
+}
+.blog h1 {
+	font-family: PlayfairDisplay-Regular;
+	font-size: 32px;
+	font-weight: 400;
+	color: #626262;
+}
+.blog p {
+	margin: 25px 0 30px;
+	font-family: PlayfairDisplay-Regular;
+	font-size: 15px;
+	font-weight: 400;
+	color: #626262;
+	line-height: 25px;
+}
+.blog img {
+	width: 100%;
+}
+.blog .first_row {
+	overflow: hidden;
+}
+.blog .first_row .blog1 {
+	width: 48%;
+	float: left;
+}
+.blog .first_row .blog2 {
+	width: 48%;
+	float: right;
+}
+.blog .second_row {
+	margin: 95px 0;
+	overflow: hidden;
+}
+.blog .second_row .blog1 {
+	width: 48%;
+	float: left;
+}
+.blog .second_row .blog2 {
+	width: 48%;
+	float: right;
+}
+/* Blog before newsletter section ends */
+
+/* Newsletter section starts */
+.newsletter {
+	padding: 65px 0;
+	width: 100%;
+	background: #e8e8e8;
+}
+.newsletter .main {
+	margin: 0 auto;
+	width: 40%;
+}
+.newsletter h1 {
+	margin-bottom: 80px;
+	font-family: PlayfairDisplay-Regular;
+	font-size: 32px;
+	font-weight: 400;
+	color: #626262;
+}
+.newsletter form {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	background: none;
+	font-family: PlayfairDisplay-Regular;
+	border-bottom: 1px solid #000;
+}
+.newsletter form input {
+	padding: 0 0 10px;
+	width: 90%;
+	background: none;
+	border: none;
+}
+.newsletter form input::placeholder {
+	font-family: PlayfairDisplay-Regular;
+	font-size: 15px;
+	font-weight: 400;
+	color: #626262;
+}
+.newsletter form input:focus {
+	outline: none;
+}
+.newsletter form button {
+	position: absolute;
+	top: 4px;
+	right: 0px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+.newsletter form button:focus {
+	outline: none;
+}
+/* Newsletter section ends */
+
+/* Blog after newsletter section starts */
+.after_blog {
+	width: 100%;
+	padding-bottom: 180px;
+}
+.blog .third_row {
+	margin: 95px 0;
+	overflow: hidden;
+}
+.blog .third_row .blog1 {
+	width: 48%;
+	float: left;
+}
+.blog .third_row .blog2 {
+	width: 48%;
+	float: right;
+}
+.blog .button {
+	text-align: center;
+}
+.blog button {
+	padding: 13px 26px;
+	font-family: PlayfairDisplay-Regular;
+	font-size: 15px;
+	font-weight: 400;
+	color: #626262;
+	background: none;
+	border: 1px solid #626262;
+	transition: 0.8s;
+}
+.blog button:hover {
+	background: #626262;
+	color: #fff;
+}
+/* Blog after newsletter section ends */
+
+/* Footer section starts */
+footer {
+	padding: 30px 0;
+	background: #e8e8e8;
+}
+footer .content {
+	overflow: hidden;
+}
+footer .terms a {
+	display: inline-block;
+	font-family: PlayfairDisplay-Regular;
+	font-size: 15px;
+	font-weight: 400;
+	color: #626262;
+	text-decoration: none;
+}
+footer .terms a:first-child {
+	margin-right: 20px;
+}
+footer .terms {
+	float: left;
+}
+footer .icons {
+	float: right;
+}
+footer .icons p {
+	margin-right: 20px;
+	display: inline-block;
+	font-family: PlayfairDisplay-Regular;
+	font-size: 15px;
+	font-weight: 400;
+	color: #626262;
+}
+footer .icons a {
+	color: #626262;
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 25px;
+	transition: 0.8s;
+}
+footer .icons a:nth-child(3) {
+	margin: 0 10px;
+}
+footer .icons a:hover {
+	background: #626262;
+	color: #e8e8e8;
+}
+/* Footer section ends */
+
+/* Sticky Menu end */
